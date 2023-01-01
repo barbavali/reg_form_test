@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize_and_reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="scripts/script.js"></script>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header class="pt-2 pb-2 pl-3 pr-3">
+      <div class="logo">
+        <svg
+          width="160px"
+          height="36px"
+          viewBox="0 0 160 36"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>Logo + Name</title>
+          <g
+            id="Reigstration-Client-Onboarding-DI:4-(DS-117)"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g
+              id="Client-Registration-API-V2---Filled"
+              transform="translate(-24.000000, -18.000000)"
+            >
+              <g id="Logo-+-Name" transform="translate(24.000000, 18.000000)">
+                <rect id="Rectangle" x="0" y="0" width="160" height="36"></rect>
+                <path
+                  d="M49.6192829,12.0186277 C53.2841965,12.0186277 56.2385657,14.9618102 56.2385657,18.6128467 C56.2385657,22.2638832 53.2841965,25.2070657 49.6192829,25.2070657 C45.9543692,25.2070657 43,22.2638832 43,18.6128467 C43,14.9618102 45.9543692,12.0186277 49.6192829,12.0186277 Z M49.6005843,23.977635 C52.5736521,23.977635 54.8922709,21.5560292 54.8922709,18.6128467 C54.8922709,15.6696642 52.5736521,13.2480584 49.6005843,13.2480584 C46.6462151,13.2480584 44.3275963,15.6696642 44.3275963,18.6128467 C44.3275963,21.5560292 46.6462151,23.977635 49.6005843,23.977635 Z M72.6439841,12.2794161 L71.2041965,12.2794161 L66.1742895,23.269781 L61.1443825,12.2794161 L59.6858964,12.2794161 L65.5572377,25.0394161 L66.7913413,25.0394161 L72.6439841,12.2794161 Z M78.7278088,13.490219 L86.225923,13.490219 L86.225923,12.2794161 L77.4002125,12.2794161 L77.4002125,24.9462774 L86.225923,24.9462774 L86.225923,23.7354745 L78.7278088,23.7354745 L78.7278088,19.2648175 L85.4779814,19.2648175 L85.4779814,18.0353869 L78.7278088,18.0353869 L78.7278088,13.490219 Z M96.2551394,20.3452263 L93.0950863,20.3452263 L93.0950863,24.9462774 L91.76749,24.9462774 L91.76749,12.2794161 L96.4982205,12.2794161 C99.3590969,12.2794161 101.341142,13.8255182 101.341142,16.321635 C101.341142,18.3893139 99.9574502,19.8236496 97.8258167,20.2334599 L101.902098,24.9462774 L100.237928,24.9462774 L96.2551394,20.3452263 Z M93.0950863,19.1344234 L96.4608234,19.1344234 C98.5363612,19.1344234 100.013546,18.0726423 100.013546,16.321635 C100.013546,14.552 98.5363612,13.490219 96.4608234,13.490219 L93.0950863,13.490219 L93.0950863,19.1344234 Z M106.733121,12.2794161 L111.164675,12.2794161 C114.081647,12.2794161 116.026295,13.9559124 116.026295,16.4706569 C116.026295,19.0599124 114.025551,20.7736642 110.996388,20.7736642 L108.060717,20.7736642 L108.060717,24.9462774 L106.733121,24.9462774 L106.733121,12.2794161 Z M108.060717,19.5628613 L111.108579,19.5628613 C113.27761,19.5628613 114.717397,18.3148029 114.717397,16.4706569 C114.717397,14.6823942 113.27761,13.490219 111.108579,13.490219 L108.060717,13.490219 L108.060717,19.5628613 Z M128.037556,21.2579854 L121.362178,21.2579854 L119.716707,24.9462774 L118.295618,24.9462774 L124.073466,12.1862774 L125.326268,12.1862774 L131.104117,24.9462774 L129.683028,24.9462774 L128.037556,21.2579854 Z M127.495299,20.0471825 L124.690518,13.769635 L121.904436,20.0471825 L127.495299,20.0471825 Z M140.067517,12 C137.374927,12 135.561169,13.4529635 135.561169,15.6324088 C135.561169,17.3461606 136.739177,18.519708 139.076494,18.948146 L141.282922,19.3765839 C142.928393,19.6746277 143.676335,20.4756204 143.676335,21.5374015 C143.676335,23.0462482 142.386135,24.0335182 140.347995,24.0335182 C138.010677,24.0335182 136.626985,22.8785985 136.30911,20.9040584 L135.000212,20.9040584 C135.299389,23.6423358 137.244037,25.2256934 140.291899,25.2256934 C143.134077,25.2256934 145.022629,23.698219 145.022629,21.3883796 C145.022629,19.5814891 143.751129,18.519708 141.488606,18.0912701 L139.562656,17.7187153 C137.879788,17.4206715 136.963559,16.7128175 136.963559,15.5578978 C136.963559,14.0863066 138.23506,13.1549197 140.161009,13.1549197 C142.292643,13.1549197 143.414555,14.1608175 143.713732,15.7069197 L145.022629,15.7069197 C144.704754,13.2108029 142.647915,12 140.067517,12 Z M154.958353,12 C152.265764,12 150.452005,13.4529635 150.452005,15.6324088 C150.452005,17.3461606 151.630013,18.519708 153.967331,18.948146 L156.173758,19.3765839 C157.81923,19.6746277 158.567171,20.4756204 158.567171,21.5374015 C158.567171,23.0462482 157.276972,24.0335182 155.238831,24.0335182 C152.901514,24.0335182 151.517822,22.8785985 151.199947,20.9040584 L149.891049,20.9040584 C150.190226,23.6423358 152.134874,25.2256934 155.182736,25.2256934 C158.024914,25.2256934 159.913466,23.698219 159.913466,21.3883796 C159.913466,19.5814891 158.641965,18.519708 156.379442,18.0912701 L154.453493,17.7187153 C152.770624,17.4206715 151.854396,16.7128175 151.854396,15.5578978 C151.854396,14.0863066 153.125896,13.1549197 155.051846,13.1549197 C157.183479,13.1549197 158.305392,14.1608175 158.604568,15.7069197 L159.913466,15.7069197 C159.595591,13.2108029 157.538752,12 154.958353,12 Z"
+                  id="OVERPASS-Copy-5"
+                  fill="#0099FF"
+                ></path>
+                <path
+                  d="M14.5001264,31 C8.1590132,31 3,25.8025096 3,19.2899507 C3,19.0742461 3.16966612,19 3.37928343,19 L25.6207166,19 C25.8303339,19 26,19.0742461 26,19.2899507 C26,25.8025096 20.8412397,31 14.5001264,31 M14.4998743,4 C6.49173436,4 0,10.4919857 0,18.5001257 C0,26.5082656 6.49173436,33 14.4998743,33 C22.5080143,33 29,26.5082656 29,18.5001257 C29,10.4919857 22.5080143,4 14.4998743,4"
+                  id="Fill-1-Copy"
+                  fill="#0099FF"
+                ></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </header>
+    <main class="pb-4">
+      <section class="account_creation mb-4 pt-3">
+        <ol class="account_steps pl-3 pr-2">
+          <li class="d_flex mb-3">
+            <div class="highlited_number number_container mr-1">
+              <div class="number">1</div>
+            </div>
+            <div class="highlited_step">
+              <h3 class="step_title">Create Account - 3 steps left</h3>
+              <p>Register your company - It takes less than a minute</p>
+            </div>
+          </li>
+          <div id="showWrapperList" style="display: none">
+            <li class="d_flex mb-3">
+              <div class="number_container mr-1">
+                <div class="number">2</div>
+              </div>
+              <div class="">
+                <h3 class="step_title">Create Job Post</h3>
+                <p>
+                  Let us know your project goals and what kind of talent you
+                  need. We'll get you the best matches for the role.
+                </p>
+              </div>
+            </li>
+            <li class="d_flex mb-3">
+              <div class="number_container mr-1">
+                <div class="number">3</div>
+              </div>
+              <div class="">
+                <h3 class="step_title">Start Interviewing</h3>
+                <p>
+                  Interview Suzanne and many more other qualified contractors
+                </p>
+              </div>
+            </li>
+          </div>
+        </ol>
+        <div class="separator_line mb-4"></div>
+        <div
+          id="showWrapper"
+          class="show_wrapper pl-3 pr-2 mb-4"
+          style="display: none"
+        >
+          <div class="figure">
+            <img
+              src="img/profile__image.png"
+              class="candidate mb-1"
+              alt="Potential candidate"
+            />
+          </div>
+          <div class="card">
+            <p class="name centered_text mb-1">Suzanne J.</p>
+            <div class="d_flex play_container mb-4">
+              <div class="play_icon">
+                <img src="img/play-button-svgrepo-com.svg" alt="play icon" />
+              </div>
+              <p class="sample centered_text">Sample</p>
+            </div>
+            <div class="d_flex details_container">
+              <div class="icon">
+                <img src="img/timezone.svg" alt="timezone icon" height="16px" />
+              </div>
+              <p class="text">
+                <strong>United States</strong> - 10:52 AM local time
+              </p>
+            </div>
+            <p class="ml-3 mb-1" id="pacific">Pacific (GMT -8)</p>
+            <div class="d_flex details_container mb-1">
+              <div class="icon">
+                <img
+                  src="img/briefcase.svg"
+                  alt="proffesion icon"
+                  height="16px"
+                />
+              </div>
+              <p class="text">
+                <strong>Real Estate Specialist</strong> - 2 yrs 5 mos
+              </p>
+            </div>
+            <div class="d_flex details_container mb-2">
+              <div class="icon">
+                <img src="img/money.svg" alt="money icon" />
+              </div>
+              <p class="text"><strong>$27.50/hr</strong></p>
+            </div>
+            <h4 class="mb-1">Interested In Roles Like</h4>
+            <p>
+              Appointment Setter, Donation Worker, Inside Sales Representative
+            </p>
+          </div>
+        </div>
+        <div class="centered_text mb-3">
+          <p>
+            <span class="show_text" id="showMore">Show More</span>
+            <span class="show_text" id="showLess" style="display: none"
+              >Show Less</span
+            >
+          </p>
+        </div>
+      </section>
+      <section class="input_section">
+        <div class="separator pb-2 pt-2 mb-4">
+          <p class="centered_text">
+            Looking to get a job? <strong>Register As A Sales Rep.</strong>
+          </p>
+        </div>
+        <div class="second_section_wrapper pl-3 pr-2">
+          <h1>Create Account</h1>
+          <h2 class="mb-3">To Register Your Company</h2>
+          <form
+            action=""
+            id="registrationForm"
+            class="mb-4"
+            action="example.com/path"
+            method="get"
+          >
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              form="registrationForm"
+              id="firstName"
+              class="text_input mb-3 validateInput"
+              name="firstName"
+              placeholder="Type your first name"
+            />
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              form="registrationForm"
+              id="lastName"
+              class="text_input mb-3 validateInput"
+              name="lastName"
+              placeholder="Type your last name"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              form="registrationForm"
+              id="email"
+              class="text_input mb-3 validateInput"
+              name="email"
+              placeholder="Type your email"
+            />
+            <label for="phone">Phone Number</label>
+            <div class="d_flex phone_wrapper mb-3">
+              <div class="select_wrapper">
+                <select
+                  name="prefix"
+                  id="prefix"
+                  class="select_input"
+                  form="registrationForm"
+                >
+                  <option value="US">+1</option>
+                </select>
+              </div>
+              <input
+                type="tel"
+                form="registrationForm"
+                id="phone"
+                class="text_input validateInput"
+                name="phone"
+                placeholder="(000) 000-0000"
+              />
+            </div>
+            <label for="promoCode">Promo Code</label>
+            <div class="promoWrapper d_flex mb-3">
+              <input
+                type="text"
+                form="registrationForm"
+                id="promoCode"
+                class="text_input"
+                name="promoCode"
+                placeholder="Type your promo code"
+              />
+              <div class="checkWrapper">
+                <svg
+                  width="12px"
+                  height="10px"
+                  class="check_icon"
+                  viewBox="0 0 12 10"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <title>Icon</title>
+                  <g
+                    id="Reigstration-Client-Onboarding-DI:4-(DS-117)"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Client-Registration-API-V2---Filled"
+                      transform="translate(-466.000000, -733.000000)"
+                    >
+                      <g
+                        id="registration"
+                        transform="translate(132.000000, 114.000000)"
+                      >
+                        <g
+                          id="Buttons-/-Circle-/-Green"
+                          transform="translate(328.000000, 612.000000)"
+                        >
+                          <g
+                            id="Icon"
+                            transform="translate(6.000000, 6.000000)"
+                          >
+                            <path
+                              d="M9.72727375,1.86526058 C10.0778306,1.43849565 10.7079745,1.37671684 11.1347394,1.72727375 C11.5472789,2.06614542 11.618759,2.66627556 11.3064092,3.09140289 L11.2727263,3.13473942 L5.52272625,10.1347394 C5.15477601,10.5826788 4.4880699,10.6225256 4.06940324,10.232708 L4.02967979,10.1936417 L0.779679787,6.81864169 C0.396592061,6.42081982 0.408536444,5.78776751 0.806358313,5.40467979 C1.19091945,5.03436165 1.79529037,5.03317908 2.1811962,5.39286272 L2.22032021,5.43135831 L4.69075,7.99675 L9.72727375,1.86526058 Z"
+                              id="icon"
+                              fill="#a7b2c3"
+                            ></path>
+                            <rect
+                              id="container"
+                              x="0"
+                              y="0"
+                              width="12"
+                              height="12"
+                            ></rect>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </form>
+          <div class="buttons_wrapper pb-4">
+            <button
+              type="submit"
+              id="next"
+              class="next_btn pt-1 pb-1 mb-2"
+              disabled="true"
+            >
+              Next
+            </button>
+            <p class="bottom_text centered_text mb-2">
+              <a href="#">Log In Instead</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="chat">
+      <img src="img/intercom.svg" alt="chat icon" />
+    </div>
+  </body>
+</html>
