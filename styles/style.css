@@ -274,6 +274,7 @@ header {
   align-items: center;
   justify-content: center;
   column-gap: 4px;
+  cursor: pointer;
 }
 
 .details_container {
